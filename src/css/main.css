@@ -1,0 +1,205 @@
+/* The denotes the content of the page that relates to the central topic of the page or app.  */
+main {
+  display: flex; 
+  flex-direction: column; 
+  padding-top:var(--gap-90);
+  padding-bottom: var(--gap-70); 
+  min-height:100vh; 
+  margin-inline: auto;  
+  width: min(90%, 1200px); 
+}
+
+.intro-component__heading {
+  text-align:center; 
+  color: var(--white); 
+  margin-bottom: var(--space-1); 
+  font: normal var(--fw-700) var(--fs-11)/var(--line-height-tight) var(--ff-Poppins); 
+  letter-spacing: var(--letter-spacing-tight); 
+}
+
+.intro-component__paragraph {
+  text-align: center; 
+  color: var(--white);
+  margin-bottom: var(--gap-60); 
+  font: normal var(--fw-500) var(--fs-2)/var(--line-height-loose) var(--ff-Poppins); 
+}
+
+.intro-component__membership-details-container {
+  background-color: var(--blue); 
+  box-shadow: var(--box-shadow); 
+  padding: var(--space-1) var(--space-11); 
+  border-radius: var(--radius-4); 
+  margin-bottom: var(--gap-22_5);
+}
+
+.intro-component__membership-details {
+  text-align: center; 
+  color: var(--white); 
+  font: normal var(--fw-400) var(--fs-1)/var(--line-height-relaxed) var(--ff-Poppins); 
+}
+
+/* To able me hide a text from the users but make it visible to screen readers.  */
+.sr-only {
+  position: absolute; 
+  white-space: nowrap; 
+  overflow: hidden; 
+  border-width: var(--sr-only-border-width); 
+  top: var(--sr-only-top); 
+  left: var(--sr-only-left); 
+  height: var(--sr-only-height); 
+  width: var(--sr-only-width); 
+  margin: var(--sr-only-margin); 
+  padding: var(--sr-only-padding); 
+}
+
+
+/* Styling the form */
+form {
+  background-color: var(--white); 
+  box-shadow: var(--box-shadow);
+  border-radius: var(--radius-4); 
+  padding: var(--space-8); 
+}
+
+
+/* Targets all the p elements that are siblings of  */
+input ~ p {
+  margin-top: 6px; 
+  text-align:right; 
+}
+
+
+input {
+  display: block; 
+  width: 100%; 
+  border-radius: var(--radius-2); 
+  background-color: transparent; 
+  border: 1px solid var(--light-grayish-blue); 
+  padding: var(--gap-15) var(--space-3) var(--gap-15) var(--space-7); 
+  outline: none; 
+  caret-color: var(--blue);  
+  color: inherit; 
+  font: inherit; 
+  letter-spacing: var(--letter-spacing-wide); 
+}
+
+input:focus {
+  outline: 2px solid var(--blue); 
+  outline-offset: 2px; 
+}
+
+
+input::placeholder {
+  opacity: 0.75;
+  mix-blend-mode: normal; 
+}
+
+input[class~="error"] {
+  border: 2px solid var(--red); 
+}
+
+
+input[type="email"][class~="error-value"] {
+  color: var(--red); 
+}
+
+/* Remove the toggle visibility shown by the browser (eye-icon) */
+input[type="password"] {
+  appearance: none;
+}
+
+
+input[type="password"]::-ms-reveal {
+  display:none; 
+}
+
+button {
+  font: caption; 
+  appearance: none; 
+  border: none; 
+  text-transform: uppercase;
+  margin-bottom: var(--gap-7_5); 
+  background-color: var(--green); 
+  box-shadow: var(--box-shadow-inset); 
+  color: var(--white); 
+  padding-block: var(--gap-15); 
+  width: 100%; 
+  border-radius: var(--radius-4); 
+  cursor: pointer; 
+  transition: background-color 0.8s ease-in; 
+}
+
+
+button:hover { background-color: var(--light-green); }
+
+button:focus { outline: none; }
+
+button:focus-visible { 
+  outline: 2px solid var(--blue); 
+  outline-offset: 2px; 
+}
+
+button + p {
+  text-align: center; 
+  color: var(--grayish-blue);
+  font: normal var(--fw-500) var(--fs-1)/var(--line-height-relaxed) var(--ff-Poppins); 
+}
+
+
+/* Target the terms and conditions  */
+button + p > strong {
+  color: var(--red); 
+}
+
+
+form > div {
+  position: relative; 
+  margin-bottom: 20px; 
+  color: var(--dark-blue); 
+  font: normal var(--fw-600) var(--fs-1)/var(--line-height-relaxed) var(--ff-Poppins); 
+
+}
+
+
+form > div > img {
+  position: absolute; 
+  right: 27px; 
+  top: 16px;  
+}
+
+/* Style for the icon error displayed to the user.  */
+img[class="icon-error__show"] { 
+  opacity: 1; 
+  visibility: visible; 
+}
+
+img[class="icon-error__hide"] {
+  opacity: 0; 
+  visibility: hidden; 
+}
+
+/* Style the  error message displayed to the user */
+form > div > p {
+  color: var(--red); 
+  font: italic var(--fw-500) var(--fs-1)/var(--line-height-relaxed) var(--ff-Poppins); 
+}
+
+/* Visibility toggler icon */
+.material-symbols-outlined {
+  position: absolute; 
+  top:16px; 
+  right: 65px; 
+  cursor: pointer; 
+}
+
+/* There needs to be a state to indicate that the eye-icon is visible so the style should go here */
+span[data-password-visible="false"] {
+  color: var(--grayish-blue); 
+}
+
+span[data-password-visible="true"] {
+  color: var(--blue); 
+}
+
+
+
