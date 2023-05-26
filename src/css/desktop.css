@@ -1,0 +1,14 @@
+main {
+  flex-direction: row; 
+  gap: var(--gap-50); 
+  padding: 0; 
+  align-items: center;
+}
+
+.intro-component__texts,  intro-component__membership{
+  flex-basis: 50%; 
+}
+
+.intro-component__heading, .intro-component__paragraph {
+  text-align: left; 
+}
