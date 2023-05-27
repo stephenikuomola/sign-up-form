@@ -4,7 +4,7 @@ class FormComponent {
   #form = document.querySelector('form'); 
   #firstName = document.querySelector("[id='firstname']");
   #lastName = document.querySelector("[id='lastname']"); 
-  #email = document.querySelector("[id='mail']");  
+  #email = document.querySelector("[id='email']");  
   #password = document.querySelector("[id='password']"); 
   #eyeIcon = document.querySelector('.material-symbols-outlined'); 
 

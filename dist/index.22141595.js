@@ -641,7 +641,7 @@ class LastName {
     }
 }
 class Email {
-    static input = document.querySelector("[id='mail']");
+    static input = document.querySelector("[id='email']");
     static errorMessage = document.querySelector(".email-error-message");
     static resetErrorMessageAndIndicator() {
         Email.errorMessage.textContent = "";

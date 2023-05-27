@@ -301,7 +301,7 @@ form > div {
 form > div > img {
   position: absolute;
   top: 16px;
-  right: 27px;
+  right: 38px;
 }
 
 img[class="icon-error__show"] {
@@ -323,7 +323,7 @@ form > div > p {
   cursor: pointer;
   position: absolute;
   top: 16px;
-  right: 65px;
+  right: 9px;
 }
 
 span[data-password-visible="false"] {

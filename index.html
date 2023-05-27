@@ -35,42 +35,42 @@
           <h2 class="intro-component__membership-details"><strong>Try it free 7 days</strong> then $20/mo. thereafter</h2>
         </div>
         <form novalidate>
-          <p class="sr-only">Fill out your information and access free trial.</p>
+
           <!-- First Name -->
           <div class="input-firstname__container">
-            <input type="text" id="firstname" name="firstname" aria-label="Enter your first name" placeholder="First Name" required  pattern=".{1,20}" title="Please enter a value between 1 and 20 characters">
+            <input aria-labelledby="firstname-error" type="text" id="firstname" name="firstname" aria-label="firstname" placeholder="First Name" required  pattern=".{1,20}" title="Please enter a value between 1 and 20 characters">
             <img src="./assets/images/icon-error.svg" aria-hidden="true" alt="" class="icon-error__hide">
-            <p class="firstname-error-message" aria-live="polite"></p>
+            <p class="firstname-error-message" aria-live="polite" id="firstname-error"></p>
           </div>
 
           <!-- Last Name -->
           <div class="input-lastname__container">
-            <input type="text" id="lastname" name="lastname" aria-label="Enter your last name" placeholder="Last Name" required  title="Please enter a value between 1 and 20 characters">
+            <input aria-labelledby="lastname-error" type="text" id="lastname" name="lastname" aria-label="lastname" placeholder="Last Name" required  title="Please enter a value between 1 and 20 characters">
             <img src="./assets/images/icon-error.svg" aria-hidden="true" alt="" class="icon-error__hide">
-            <p class="lastname-error-message" aria-live="polite"></p>
+            <p class="lastname-error-message" aria-live="polite" id="lastname-error"></p>
           </div>
 
           <!-- Email -->
           <div class="input-email__container">
-            <input type="email" id="mail" name="mail" aria-label="Enter your email address" placeholder="Email Address"  required title="Please enter an valid email">
-            <img src="./assets/images/icon-error.svg" aria-hidden="true" alt="" class="icon-error__hide">
-            <p class="email-error-message" aria-live="polite"></p>
+            <input aria-labelledby="email-error" type="email" id="email" name="email" aria-label="" placeholder="Email Address" required>
+            <img src="./assets/images/icon-error.svg" aria-hidden="true" alt="email" class="icon-error__hide">
+            <p class="email-error-message" aria-live="polite" id="email-error"></p>
           </div>
 
           <!-- Password -->
           <div class="input-password__container">
-            <input type="password" id="password" name="password" aria-label="Enter your password" placeholder="Password" required minlength="7" title="Please enter a password (at least 7 characters long)">
+            <input aria-labelledby="password-error" type="password" id="password" name="password" aria-label="password" placeholder="Password" required minlength="7">
             <img src="./assets/images/icon-error.svg" aria-hidden="true" alt="" class="icon-error__hide">
-            <p class="password-error-message" aria-live="polite"></p>
-            <span class="material-symbols-outlined" data-password-visible="false">visibility
+            <p class="password-error-message" aria-live="polite" id="password-error"></p>
+            <span role="button" class="material-symbols-outlined" data-password-visible="false">visibility
             </span>
           </div>
 
           <!-- Button -->
-          <button type="submit" class="submit-form">Claim your free trial</button>
+          <button type="submit" class="submit-form" aria-labelledby="terms-conditions">Claim your free trial</button>
 
           <!-- Terms and conditions -->
-          <p>By clicking the button, you are agreeing to our <strong>Terms and Services</strong></p>
+          <p id="terms-conditions">By clicking the button, you are agreeing to our <strong>Terms and Services</strong></p>
         </form>
       </section>
     </main>

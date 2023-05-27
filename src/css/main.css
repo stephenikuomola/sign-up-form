@@ -162,7 +162,7 @@ form > div {
 
 form > div > img {
   position: absolute; 
-  right: 27px; 
+  right: 38px; 
   top: 16px;  
 }
 
@@ -187,7 +187,7 @@ form > div > p {
 .material-symbols-outlined {
   position: absolute; 
   top:16px; 
-  right: 65px; 
+  right: 9px; 
   cursor: pointer; 
 }
 
