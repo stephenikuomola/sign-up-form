@@ -4,7 +4,7 @@
 	<h2 align="center">A simple User Sign Up Form</h2>
 	A simple sign up form where users can register to learn how to code by watching others, <br/> Responsive for all devices using HTML, CSS and JavaScript.
 	<br/>
-	<a href="https://sign-up-to-learn-to-code"><strong>➥ Live Demo</strong></a>
+	<a href="https://user-sign-up-form.netlify.app/"><strong>➥ Live Demo</strong></a>
 </div>
 
 <br/>
