@@ -62,7 +62,7 @@ form {
 }
 
 
-/* Targets all the p elements that are siblings of  */
+/* Targets all the p elements that are siblings of general siblings of the inputs */
 input ~ p {
   margin-top: 6px; 
   text-align:right; 
